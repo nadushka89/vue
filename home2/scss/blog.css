@@ -1,0 +1,13 @@
+.blog_banner {
+  height: 356px;
+}
+.blog_banner_img {
+  background-image: url("../image/blog_banner.jpg");
+  position: absolute;
+  height: 1324px;
+  left: -19px;
+  right: -1610px;
+  top: -349px;
+  bottom: 945px;
+  transform: rotate(180deg);
+}/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="sorted">{{ sortedText}}</button>
+      <ul>
+        <li v-for="product in sortedProducts" :key="product.id">{{product.id}}. {{product.name}} - {{product.price}}.</li>
+      </ul>
+    </div>
+
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          products: [
+            { id: 1, name: 'Скакалка', price: 5600 },
+            { id: 2, name: 'Обруч', price: 3450 },
+            { id: 3, name: 'Булавы', price: 9800 },
+            { id: 4, name: 'Лента', price: 4600 },
+          ],
+          isSorted: false,
+          sortedText: 'По убыванию',
+        },
+        computed: {
+          sortedProducts() {
+            if (this.isSorted) {
+              return this.products.slice().sort((a, b) => {
+                return this.isSorted === 1 ? a.price - b.price : b.price - a.price;
+              });
+            } else {
+              return this.products;
+            }
+          },
+        },
+        methods: {
+          sorted() {
+            this.isSorted = this.isSorted === 1 ? 2 : 1;
+            this.sortedText = this.isSorted === 1 ? 'По убыванию' : 'По возрастанию';
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+Вы разрабатываете приложение для отображения и сортировки списка товаров. У вас есть массив объектов products, где каждый объект представляет товар с его названием и ценой. Вам необходимо отобразить список товаров и предоставить пользователю возможность сортировать товары по цене (по возрастанию и по убыванию). -->

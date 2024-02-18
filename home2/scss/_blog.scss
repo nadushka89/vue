@@ -1,0 +1,170 @@
+.blog_banner {
+  background-image: url('../image/blog_banner.jpg');
+  background-position: left -1050px top -1200px;
+  background-repeat: repeat-x;
+  height: 356px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 200px;
+  &_intro {
+    width: 503px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 41px 78px 41px 78px;
+    border-radius: 37px 37px 0px 0px;
+    background: rgb(255, 255, 255);
+    &-title {
+      color: rgb(41, 47, 54);
+      font-family: DM Serif Display;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 125%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &-text {
+      color: rgb(77, 80, 83);
+      font-family: Jost;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 1%;
+      text-align: left;
+    }
+  }
+}
+
+.latest_post {
+  &_title {
+    color: rgb(41, 47, 54);
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+    margin-bottom: 27px;
+  }
+  &_image {
+    width: 569px;
+    height: 478px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: rgb(196, 196, 196);
+  }
+  &_contents {
+    display: flex;
+    width: 1201px;
+    height: 522px;
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 62px;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    padding-left: 16px;
+    padding-top: 16px;
+    gap: 65px;
+    margin-bottom: 150px;
+    &_img {
+      width: 765px;
+      height: 510px;
+    }
+  }
+  &_right {
+    max-width: 469px;
+    &_text {
+      color: rgb(77, 80, 83);
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 1%;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    &_item {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 41px;
+    }
+    &_title {
+      color: rgb(41, 47, 54);
+      font-family: DM Serif Display;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 125%;
+      text-align: left;
+      padding-top: 51.5px;
+      margin-bottom: 22px;
+    }
+
+    &_desc {
+      color: rgb(77, 80, 83);
+      font-family: Jost;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
+    }
+  }
+}
+
+.blog {
+  &__title_left {
+    color: rgb(41, 47, 54);
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+  }
+}
+.count_page {
+  margin-bottom: 200px;
+  &_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgb(205, 162, 116);
+    border-radius: 52px;
+
+    &-text {
+      color: rgb(41, 47, 54);
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 150%;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    &:hover {
+      background: rgb(244, 240, 236);
+      border: none;
+      width: 52px;
+      height: 52px;
+      border-radius: 52px;
+    }
+  }
+  &-svg:hover {
+    fill: rgb(244, 240, 236);
+    & circle {
+      stroke: none;
+    }
+  }
+}
