@@ -1,0 +1,168 @@
+.blog-details {
+  &_banner {
+    background-image: url(../image/banner_blog_details.jpeg);
+    height: 351px;
+    margin-bottom: 200px;
+  }
+  &__wrap {
+    display: flex;
+    gap: 57px;
+  }
+}
+
+.article {
+  &__img {
+    max-width: 799px;
+    height: 539px;
+    margin-bottom: 46px;
+    border-radius: 50px;
+    &__2 {
+      height: 365px;
+    }
+  }
+  &__title {
+    max-width: 684px;
+    color: rgb(41, 47, 54);
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+    margin-bottom: 11px;
+  }
+  &__info {
+    display: flex;
+    gap: 409px;
+    color: rgb(77, 80, 83);
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 48px;
+  }
+  &__text {
+    max-width: 799px;
+    color: rgb(77, 80, 83);
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1%;
+    text-align: left;
+  }
+  &__list {
+    margin-top: 24px;
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 732.39px;
+    &-num {
+      display: flex;
+      gap: 14px;
+      &-text {
+        color: rgb(205, 162, 116);
+        font-family: DM Serif Display;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 2%;
+        text-align: left;
+      }
+    }
+    &-item {
+      color: rgb(77, 80, 83);
+      font-family: Jost;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 1%;
+      text-align: left;
+    }
+  }
+}
+.info {
+  &-block {
+    margin-bottom: 27px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 267px;
+    border-radius: 50px;
+    background: rgb(244, 240, 236);
+    gap: 10px;
+    &__quotation-marks {
+      margin-top: 40px;
+      margin-bottom: -40px;
+      width: 106px;
+      height: 133px;
+      color: rgb(205, 162, 116);
+      font-family: DM Serif Display;
+      font-style: italic;
+      font-size: 200px;
+      font-weight: 400;
+      line-height: 125%;
+      text-align: center;
+    }
+    &__text {
+      color: rgb(205, 162, 116);
+      font-family: DM Serif Display;
+      font-style: italic;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 125%;
+      width: 345px;
+      height: 70px;
+      text-align: center;
+    }
+  }
+}
+.tags {
+    display: flex;
+    
+  &__title {
+    color: rgb(41, 47, 54);
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 2%;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  &__buttons{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 9px 30px 9px 30px;
+        border-radius: 10px;
+        background: rgb(244, 240, 236);
+        color: rgb(41, 47, 54);
+        font-family: Jost;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 2%;
+        text-align: center;
+        border: none;
+        &:hover{
+            background: rgb(41, 47, 54);
+            color: rgb(255, 255, 255);
+    
+        }
+      }
+
+  }
+}
